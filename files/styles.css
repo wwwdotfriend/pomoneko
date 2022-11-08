@@ -390,6 +390,26 @@
   --input-text: #000;
 }
 
+.rose-pine {
+  --h1-color: #eb6f92;
+  --gradient-start: #191724;
+  --gradient-end: #191724;
+  --start-text: #e0def4;
+  --stop-text: #e0def4;
+  --display-bg: #26233a;
+  --display-text: #9ccfd8;
+  --start-bg: #524f67;
+  --stop-bg: #403d52;
+  --menu-btn-text: #fff;
+  --type-text: #000;
+  --menu-btn-options-bg: #524f67;
+  --menu-btn-options-text: #e0def4;
+  --menu-btn-sessions-bg: #403d52;
+  --menu-btn-sessions-text: #e0def4;
+  --input-bg: #26233A;
+  --input-text: #e0def4;
+}
+
 .blue-yellow {
   --h1-color: #42637f;
   --gradient-start: #fdc921;
@@ -532,7 +552,15 @@
   --ear-color: #605353;
   --nose-color: #6f6060;
   --shadow-color: #242424;
-  --eye-color: #ffd249;
+  --eye-color: #f6c177;
+}
+
+.black-rose-cat {
+  --cat-color: #26233a;
+  --ear-color: #c4a7e7;
+  --nose-color: #c4a7e7;
+  --shadow-color: #1f1d2e;
+  --eye-color: #f6c177;
 }
 
 .grey-cat {
@@ -700,6 +728,7 @@ body {
 h1 {
   text-align: center;
   font-size: 60px;
+  font-family: "Space Mono", monospace;
   margin-bottom: 0;
   font-weight: 100;
   color: var(--h1-color);
