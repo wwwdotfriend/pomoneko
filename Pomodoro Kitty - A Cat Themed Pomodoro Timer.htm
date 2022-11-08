@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class=" hhxqxsicut idc0_344" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An aesthetic timer with multiple themes. Let a cat watch you work! Pomodoro is a time management method that breaks work into manageable chunks of time.">
+    <meta property="og:image" content="https://pomodorokitty.com/img/social-share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cassidylearns">
+    <meta name="twitter:creator" content="@cassidylearns">
+    <meta name="twitter:title" content="Pomodoro Kitty - A Cat Themed Pomodoro Timer">
+    <meta name="twitter:description" content="A cat themed pomodoro timer with multiple themes to choose between. Pomodoro is a time management method used to break work into manageable chunks of time.">
+    <meta name="twitter:image" content="https://pomodorokitty.com/img/pomodoro-twitter.jpg">
+    <title>Pomodoro Kitty - A Cat Themed Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="preload" as="style" href="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/css2.css"> 
+<link rel="stylesheet" href="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/styles.css">
+<link rel="stylesheet" href="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/css2.css" media="all" onload="this.media='all'">
+
+<noscript>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" />
+</noscript>
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/rjq2hnb.css" /> -->
+
+    <!-- Google Tag Manager -->
+    <script async="" src="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/google-analytics_analytics.js"></script><script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NNPG724");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body class="all-grey" cz-shortcut-listen="true">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NNPG724"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <main class="wrap">
+      <h1 style="display: none;">Pomodoro Kitty</h1>
+      <div class="time">
+        <div class="catPerch">
+          <div id="catContainer" class="black-cat-yellow">
+            <div class="cat">
+              <div class="head">
+                <div class="ears">
+                  <div class="ear-l">
+                    <div class="inner1"></div>
+                  </div>
+                  <div class="ear-r">
+                    <div class="inner2"></div>
+                  </div>
+                </div>
+                <div class="face">
+                  <div class="eyes tired">
+                    <div class="eyecover"></div>
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                  </div>
+                  <div class="nose"></div>
+                </div>
+              </div>
+              <div class="body">
+                <div class="tail"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="display-container">
+          <div class="display">
+            <div class="type"></div>
+            <div class="time">25:00</div>
+          </div>
+          <div class="buttonRow">
+            <button class="startTimer">Start</button>
+            <!-- <button class="pauseTimer">Pause</button> -->
+            <button class="stopTimer">Stop</button>
+          </div>
+        </div>
+        <div class="taskContainer">
+          <div class="task">
+            <input type="text" id="pomodoro-clock-task" placeholder="What would you like to accomplish?" autocomplete="off" tabindex="0">
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="menuBtnContainer">
+      <nav class="menuButtons">
+        <!-- writing mode doesn't work on buttons in chrome so must use link instead -->
+        <button class="menu_btn options_btn"><span>Options</span></button>
+        <button class="menu_btn sessions_btn"><span>History</span></button>
+      </nav>
+      <div id="optionsMenu" class="closed">
+        <div class="menuWrap" style="visibility: hidden;">
+          <button class="closeMenuBtn" aria-label="Close menu">
+            <svg class="closeBtn" enable-background="new 0 0 512.001 512.001" viewBox="0 0 512.001 512.001" xmlns="http://www.w3.org/2000/svg">
+              <path class="closeMenuBtnPath" d="m284.286 256.002 221.857-221.858c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.858 221.858-221.857-221.858c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.857 221.857-221.857 221.858c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.856-221.857 221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285z"></path>
+            </svg>
+          </button>
+          <!-- <button class="closeMenuBtn"  aria-label="Close menu">
+            <svg
+              class="closeBtn"
+              enable-background="new 0 0 512.001 512.001"
+              viewBox="0 0 512.001 512.001"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="closeMenuBtnPath"
+                d="m284.286 256.002 221.857-221.858c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.858 221.858-221.857-221.858c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.857 221.857-221.857 221.858c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.856-221.857 221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285z"
+              />
+            </svg>
+          </button> -->
+          <h2>Options</h2>
+          <button class="requestPermissionsBtn" style="display: none;">
+            Allow timer notifications
+          </button>
+          <button id="titleToggle">show title</button>
+          <h3>Set times</h3>
+          <p>This will reset the clock if you have a timer in progress.</p>
+          <form id="change-times">
+            <label for="work-time">Work time (in min):</label>
+            <input type="number" id="work-time" name="work-time" value="25" min="0" oninput="validity.valid||(value='');">
+
+            <label for="break-time">Break time (in min):</label>
+            <input type="number" id="break-time" name="break-time" value="5" min="0" oninput="validity.valid||(value='');">
+
+            <label for="long-break-time">Long break time (in min):</label>
+            <input type="number" id="long-break-time" name="long-break-time" value="15" min="0" oninput="validity.valid||(value='');">
+          </form>
+          <button type="submit" form="change-times" value="Submit">
+            Set times
+          </button>
+
+          <h3>Cat colour</h3>
+          <div id="catBgContainer"><button class="colour" aria-label="Black cat, blue eyes" data-class="black-cat" style="background: linear-gradient(45deg, #333, #333 70%,#9ddbf9 70%)">
+    </button><button class="colour" aria-label="Black cat, green eyes" data-class="black-cat-green" style="background: linear-gradient(45deg, #333, #333 70%,#acd359 70%)">
+    </button><button class="colour" aria-label="Black cat, orange eyes" data-class="black-cat-orange" style="background: linear-gradient(45deg, #333, #333 70%,#ff9f1c 70%)">
+    </button><button class="colour active" aria-label="Black cat, yellow eyes" data-class="black-cat-yellow" style="background: linear-gradient(45deg, #333, #333 70%,#ffd249 70%)">
+    </button><button class="colour" aria-label="Grey cat, orange eyes" data-class="grey-cat" style="background: linear-gradient(45deg, #4b5d67, #4b5d67 70%,#f2a365 70%)">
+    </button><button class="colour" aria-label="Grey cat, green eyes" data-class="grey-cat-green" style="background: linear-gradient(45deg, #4b5d67, #4b5d67 70%,#acd359 70%)">
+    </button><button class="colour" aria-label="Grey cat, blue eyes" data-class="grey-cat-blue" style="background: linear-gradient(45deg, #4b5d67, #4b5d67 70%,#95dee6 70%)">
+    </button><button class="colour" aria-label="Grey cat, yellow eyes" data-class="grey-cat-yellow" style="background: linear-gradient(45deg, #4b5d67, #4b5d67 70%,#ffd249 70%)">
+    </button><button class="colour" aria-label="White cat, blue eyes" data-class="white-cat" style="background: linear-gradient(45deg, #fffff2, #fffff2 70%,#95dee6 70%)">
+    </button><button class="colour" aria-label="White cat, green eyes" data-class="white-cat-green" style="background: linear-gradient(45deg, #fffff2, #fffff2 70%,#acd359 70%)">
+    </button><button class="colour" aria-label="White cat, orange eyes" data-class="white-cat-orange" style="background: linear-gradient(45deg, #fffff2, #fffff2 70%,#f2a365 70%)">
+    </button><button class="colour" aria-label="White cat, yellow eyes" data-class="white-cat-yellow" style="background: linear-gradient(45deg, #fffff2, #fffff2 70%,#ffd249 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="chocolate-cat" style="background: linear-gradient(45deg, #523535, #523535 70%,#acd359 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="chocolate-cat-blue" style="background: linear-gradient(45deg, #523535, #523535 70%,#9ddbf9 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="chocolate-cat-orange" style="background: linear-gradient(45deg, #523535, #523535 70%,#f2a365 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="chocolate-cat-yellow" style="background: linear-gradient(45deg, #523535, #523535 70%,#ffd249 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="ginger-cat-blue" style="background: linear-gradient(45deg, #f09d3f, #f09d3f 70%,#9ddbf9 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="ginger-cat-green" style="background: linear-gradient(45deg, #f09d3f, #f09d3f 70%,#acd359 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="ginger-cat-yellow" style="background: linear-gradient(45deg, #f09d3f, #f09d3f 70%,#ffd249 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="lightgrey-cat-blue" style="background: linear-gradient(45deg, #aeaaa7, #aeaaa7 70%,#9ddbf9 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="lightgrey-cat-green" style="background: linear-gradient(45deg, #aeaaa7, #aeaaa7 70%,#acd359 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="lightgrey-cat-orange" style="background: linear-gradient(45deg, #aeaaa7, #aeaaa7 70%,#ff9f1c 70%)">
+    </button><button class="colour" aria-label="undefined" data-class="lightgrey-cat-yellow" style="background: linear-gradient(45deg, #aeaaa7, #aeaaa7 70%,#ffd249 70%)">
+    </button></div>
+
+          <h3>Background colour</h3>
+          <div id="colourContainer"><button class="colour" aria-label="Light Grey" data-class="light-grey" style="background:  linear-gradient(
+      53deg,
+      #f8f9fa,
+      #ced4da
+    );">
+    </button><button class="colour" aria-label="Nearly white" data-class="off-white" style="background:  linear-gradient(
+      53deg,
+      #D7E1EC,
+      #FFFFFF
+    );">
+    </button><button class="colour" aria-label="Pink" data-class="default" style="background:  linear-gradient(
+      53deg,
+      #ee9ca7,
+      #ffdde1
+    );">
+    </button><button class="colour" aria-label="Pink orange" data-class="pink-orange" style="background:  linear-gradient(
+      53deg,
+      #f9c1b1,
+      #fb8085
+    );">
+    </button><button class="colour" aria-label="Blush" data-class="blush" style="background:  linear-gradient(
+      53deg,
+      #b5838d,
+      #ffb4a2
+    );">
+    </button><button class="colour" aria-label="Pale yellow" data-class="pale-yellow" style="background:  linear-gradient(
+      53deg,
+      #f9d29d,
+      #ffd8cb
+    );">
+    </button><button class="colour" aria-label="Earthy Orange" data-class="earthy-orange" style="background:  linear-gradient(
+      53deg,
+      #fcb97d,
+      #fcb97d
+    );">
+    </button><button class="colour" aria-label="Earthy" data-class="earthy" style="background:  linear-gradient(
+      53deg,
+      #cb997e,
+      #cb997e
+    );">
+    </button><button class="colour" aria-label="Earthy Red" data-class="earthy-red" style="background:  linear-gradient(
+      53deg,
+      #d66853,
+      #d66853
+    );">
+    </button><button class="colour" aria-label="Bright Red" data-class="bright-red" style="background:  linear-gradient(
+      53deg,
+      #85182a,
+      #da1e37
+    );">
+    </button><button class="colour" aria-label="Red and Brown" data-class="reddy-brown" style="background:  linear-gradient(
+      53deg,
+      #3a001e,
+      #3a001e
+    );">
+    </button><button class="colour" aria-label="Sunset Orange" data-class="sunset-orange" style="background:  linear-gradient(
+      53deg,
+      #e85d04,
+      #faa307
+    );">
+    </button><button class="colour" aria-label="Blue Yellow" data-class="blue-yellow" style="background:  linear-gradient(
+      53deg,
+      #fdc921,
+      #fdc921
+    );">
+    </button><button class="colour" aria-label="Blue" data-class="blue" style="background:  linear-gradient(
+      53deg,
+      #caf0f8,
+      #00b4d8
+    );">
+    </button><button class="colour" aria-label="Light Blue" data-class="light-blue" style="background:  linear-gradient(
+      53deg,
+      #63aca4,
+      #edf6f9
+    );">
+    </button><button class="colour" aria-label="Forest Green" data-class="forest-green" style="background:  linear-gradient(
+      53deg,
+      #5F7161,
+      #6D8B74
+    );">
+    </button><button class="colour" aria-label="Green" data-class="green" style="background:  linear-gradient(
+      53deg,
+      #d8d8ac,
+      #c8c85e
+    );">
+    </button><button class="colour" aria-label="Purple" data-class="purple" style="background:  linear-gradient(
+      53deg,
+      #9ab5e1,
+      #f39fdc
+    );">
+    </button><button class="colour" aria-label="Light Purple" data-class="light-purple" style="background:  linear-gradient(
+      53deg,
+      #947EC3,
+      #947EC3
+    );">
+    </button><button class="colour" aria-label="Bright Purple" data-class="bright-purple" style="background:  linear-gradient(
+      53deg,
+      #8900f2,
+      #e500a4
+    );">
+    </button><button class="colour" aria-label="Moon Purple" data-class="moon-purple" style="background:  linear-gradient(
+      53deg,
+      #4e54c8,
+      #8f94fb
+    );">
+    </button><button class="colour" aria-label="Ace Flag" data-class="ace-flag" style="background:  linear-gradient(
+      53deg,
+      #800080,
+      #800080
+    );">
+    </button><button class="colour" aria-label="Halloween gradient" data-class="halloween-gradient" style="background:  linear-gradient(
+      53deg,
+      #3C096C,
+      #9D4EDD
+    );">
+    </button><button class="colour" aria-label="Dark blue" data-class="dark-blue" style="background:  linear-gradient(
+      53deg,
+      #000000,
+      #14213d
+    );">
+    </button><button class="colour" aria-label="Twitter dim" data-class="twitter-dark" style="background:  linear-gradient(
+      53deg,
+      #15202b,
+      #15202b
+    );">
+    </button><button class="colour active" aria-label="All Grey" data-class="all-grey" style="background:  linear-gradient(
+      53deg,
+      #232323,
+      #232323
+    );">
+    </button><button class="colour" aria-label="Green Purple" data-class="green-purple" style="background:  linear-gradient(
+      53deg,
+      #0b525b,
+      #4d194d
+    );">
+    </button></div>
+        </div>
+        <footer class="credit">
+          Created by
+          <a href="https://twitter.com/cassidylearns" target="_blank">@cassidylearns</a>
+          |
+          <a href="https://ko-fi.com/pomodorokitty" target="_blank">Support Pomodoro Kitty</a>
+        </footer>
+      </div>
+      <div id="sessionsMenu" class="closed">
+        <div class="menuWrap" style="visibility: hidden;">
+          <!-- <a class="closeMenu">
+            <svg
+              class="closeBtn"
+              enable-background="new 0 0 512.001 512.001"
+              viewBox="0 0 512.001 512.001"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="closeMenuBtn"
+                d="m284.286 256.002 221.857-221.858c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.858 221.858-221.857-221.858c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.857 221.857-221.857 221.858c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.856-221.857 221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285z"
+              />
+            </svg>
+          </a> -->
+          <button class="closeMenuBtn" aria-label="Close menu">
+            <svg class="closeBtn" enable-background="new 0 0 512.001 512.001" viewBox="0 0 512.001 512.001" xmlns="http://www.w3.org/2000/svg">
+              <path class="closeMenuBtnPath" d="m284.286 256.002 221.857-221.858c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.858 221.858-221.857-221.858c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.857 221.857-221.857 221.858c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.856-221.857 221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285z"></path>
+            </svg>
+          </button>
+
+          <h2>Your History</h2>
+          <h3>Lifetime Stats</h3>
+          <div id="pomodorosCompleted">
+            You've completed <span class="timeCompleted">1 hrs 55 min</span> worth of
+            work.
+          </div>
+          <h3>Today's History</h3>
+          <ul id="sessions"></ul>
+        </div>
+        <footer class="credit">
+          Created by
+          <a href="https://twitter.com/cassidylearns" target="_blank">@cassidylearns</a>
+          |
+          <a href="https://ko-fi.com/pomodorokitty" target="_blank">Support Pomodoro Kitty</a>
+        </footer>
+      </div>
+      
+    </div>
+
+    
+
+    <script src="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/script.js"></script>
+  
+
+<script src="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/app.js" type="text/javascript"></script><div id="forest-ext-shadow-host"></div></body></html>
