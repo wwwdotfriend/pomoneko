@@ -879,3 +879,7 @@ playButton.addEventListener("click", handlePlayButton, false);
 
 // if close button is clicked close menu
 closeMenuBtn.forEach(btn => btn.addEventListener('click', closeMenu));
+
+$("body").css("overflow", "hidden");
+
+$("body").css("overflow", "auto");

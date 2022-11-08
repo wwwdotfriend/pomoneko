@@ -51,7 +51,11 @@
     <!-- End Google Tag Manager (noscript) -->
     
     <main class="wrap">
-      <center><span style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 64px; color: #eb6f92; ">ぽ</span><span style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 64px; color: #f6c177">も</span><span style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 64px; color: #31748f">猫</span></center>
+      <div style="text-align: center;">
+        <span style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 64px; color: #eb6f92; ">ぽ</span>
+        <span style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 64px; color: #f6c177">も</span>
+        <span style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 64px; color: #31748f">猫</span>
+      </div>
       <div class="time">
         <div class="catPerch">
           <div id="catContainer" class="black-rose-cat">
@@ -106,11 +110,11 @@
       </nav>
       <div id="optionsMenu" class="closed">
         <div class="menuWrap" style="visibility: hidden;">
-          <button class="closeMenuBtn" aria-label="Close menu">
+          <!-- <button class="closeMenuBtn" aria-label="Close menu">
             <svg class="closeBtn" enable-background="new 0 0 512.001 512.001" viewBox="0 0 512.001 512.001" xmlns="http://www.w3.org/2000/svg">
               <path class="closeMenuBtnPath" d="m284.286 256.002 221.857-221.858c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.858 221.858-221.857-221.858c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.857 221.857-221.857 221.858c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.856-221.857 221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285z"></path>
             </svg>
-          </button>
+          </button> -->
           <!-- <button class="closeMenuBtn"  aria-label="Close menu">
             <svg
               class="closeBtn"
@@ -124,22 +128,39 @@
               />
             </svg>
           </button> -->
-          <h2>Options</h2>
-          <button class="requestPermissionsBtn" style="display: none;">
-            Allow timer notifications
-          </button>
-          <button id="titleToggle">show title</button>
-          <h3>Set times</h3>
+          <h2>set times</h2>
           <p>This will reset the clock if you have a timer in progress.</p>
           <form id="change-times">
             <label for="work-time">Work time (in min):</label>
-            <input type="number" id="work-time" name="work-time" value="25" min="0" oninput="validity.valid||(value='');">
+            <input 
+              style="
+                color: #c4a7e7;
+                background: transparent;
+                border: none; 
+                outline: none; 
+                border-bottom: 3px solid #c4a7e7; " 
+              type="number" id="work-time" name="work-time" value="25" min="0" oninput="validity.valid||(value='');"
+            >
 
             <label for="break-time">Break time (in min):</label>
-            <input type="number" id="break-time" name="break-time" value="5" min="0" oninput="validity.valid||(value='');">
+            <input 
+              style="
+                color: #c4a7e7;
+                background: transparent;
+                border: none; 
+                outline: none; 
+                border-bottom: 3px solid #c4a7e7; " 
+              type="number" id="break-time" name="break-time" value="5" min="0" oninput="validity.valid||(value='');">
 
             <label for="long-break-time">Long break time (in min):</label>
-            <input type="number" id="long-break-time" name="long-break-time" value="15" min="0" oninput="validity.valid||(value='');">
+            <input  
+              style="
+                color: #c4a7e7;
+                background: transparent;
+                border: none; 
+                outline: none; 
+                border-bottom: 3px solid #c4a7e7; "               
+              type="number" id="long-break-time" name="long-break-time" value="15" min="0" oninput="validity.valid||(value='');">
           </form>
           <button type="submit" form="change-times" value="Submit">
             Set times
